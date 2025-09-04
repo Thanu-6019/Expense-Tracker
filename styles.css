@@ -1,0 +1,17 @@
+:root { --bg:#f7f7f7; --card:#fff; --accent:#4caf50; --danger:#e53935; --muted:#666; }
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);margin:0;padding:20px;display:flex;justify-content:center}
+.container{width:100%;max-width:720px}
+h1{text-align:center}
+.balance-card{background:var(--card);padding:16px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.06);margin-bottom:12px}
+#balance{font-size:28px;margin:8px 0}
+.inc-exp{display:flex;justify-content:space-between}
+.inc-exp div{width:48%;background:#fafafa;padding:8px;border-radius:6px;text-align:center}
+.form{display:flex;gap:8px;margin-bottom:12px}
+.form input,.form select{flex:1;padding:8px;border:1px solid #ddd;border-radius:6px}
+.form button{padding:8px 12px;border:0;background:var(--accent);color:#fff;border-radius:6px}
+.transactions{list-style:none;padding:0}
+.transactions li{background:var(--card);display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:6px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.transactions li.plus{border-left:4px solid var(--accent)}
+.transactions li.minus{border-left:4px solid var(--danger)}
+.delete-btn{background:transparent;border:0;color:var(--muted);cursor:pointer;padding:4px}
+.small-date{display:block;font-size:11px;color:#999}
